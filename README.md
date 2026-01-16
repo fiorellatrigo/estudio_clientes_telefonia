@@ -1,51 +1,32 @@
-# estudio_clientes_telefonia
+# Megaline: Consumer Behavior & Revenue Analysis 📱📊
 
-**Proyecto S5 – Análisis de Uso y Rentabilidad de Planes Telefónicos**
+## Project Overview
+This project analyzes subscriber behavior, consumption patterns, and revenue streams for Megaline to identify the factors that drive plan profitability. Our goal is to provide a data-driven foundation for the company's commercial strategy by transforming raw usage logs into actionable insights.
 
-Proyecto realizado durante mi formación en TripleTen. El objetivo fue analizar el comportamiento de clientes móviles, su uso de servicios y la rentabilidad de dos planes diferentes, utilizando Python para limpieza, análisis exploratorio y pruebas estadísticas.
+The analysis bridges the gap between raw data auditing and strategic business intelligence, ensuring that all findings are backed by statistical rigor.
 
-**Objetivos**
+## 🚀 Key Features
+- **Data Engineering:** Consolidated 5 independent datasets into a unified analytical engine.
+- **Behavioral Profiling:** Calculated monthly usage (calls, SMS, GB) and revenue per user, accounting for plan overages.
+- **Statistical Analysis:** Identification and handling of outliers to ensure clean, representative distributions.
+- **Comparative Study:** Analyzed the performance differences between the **Smart** and **Ultra** plans.
 
-- Analizar uso de llamadas, mensajes e internet por usuario.
-- Comparar ingresos entre planes «Surf» y «Ultimate».
-- Identificar tendencias de consumo por mes.
-- Evaluar hipótesis estadísticas sobre ingresos.
+## 📈 Main Findings
+1. **Usage Patterns:** Users on the Smart plan tend to exceed their limits more frequently, generating significant overage revenue.
+2. **Revenue Drivers:** Internet consumption is the primary factor driving extra charges across both plans.
 
-**Dataset**
+## 🛠️ Tech Stack
+- **Languages:** Python (Pandas, Numpy).
+- **Visualization:** Matplotlib, Seaborn.
+- **Statistics:** SciPy (Outlier detection and data distribution analysis).
 
-Los datos contienen:
-- Información de usuarios
-- Planes contratados
-- Registros de llamadas
-- Registros de mensajes
-- Consumo de internet
-- Cargos mensuales por usuario
+## 📂 Project Structure
+- `megaline_consumer_behavior_analysis.ipynb`: Main notebook with cleaning, analysis, and visualizations.
+- `data/`: Original files (calls, internet, messages, plans, users).
+- `requirements.txt`: List of dependencies.
 
-**Tecnologías**
-
-- Python
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scipy
-
-**Cómo ejecutar**
-
-pip install -r requirements.txt
-
-jupyter notebook
-
-Abrir proyecto_s5.ipynb.
-
-**Resultados principales**
-
-- Los usuarios del plan «Ultimate» generan más ingresos promedio.
-- El consumo de internet crece sostenidamente mes a mes.
-- El número de llamadas no muestra variaciones fuertes entre planes.
-- Internet es el servicio con más variabilidad entre usuarios.
-- La diferencia de ingresos entre planes es estadísticamente significativa.
-
-**Nota**
-
-Proyecto desarrollado como parte del bootcamp de Ciencia de Datos de TripleTen.
+## ⚙️ How to Run
+1. Clone this repository.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
